@@ -1,11 +1,25 @@
 ---
 layout: page
-title: "Contributor Code of Conduct"
+title: "Code of Conduct"
 ---
-As contributors and maintainers of this project,
-we pledge to follow the [Carpentry Code of Conduct][coc].
 
-Instances of abusive, harassing, or otherwise unacceptable behavior
-may be reported by following our [reporting guidelines][coc-reporting].
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>.This document also outlines how to report an incident if needed.
+</p>
 
-{% include links.md %}
+<p class="text-center">
+  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
+    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+  </a>
+</p>
+<hr/>
+
+
+
+<!-- {% include links.md %} -->

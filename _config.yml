@@ -11,7 +11,7 @@
 #  https://github.com/carpentries/workshop-template
 # and for instructor training events you should use:
 #  https://github.com/carpentries/training-template
-carpentry: "swc"
+carpentry: "dc"
 
 # This option is currently only needed for Data Carpentry workshops.
 # The value of the variable will be ignored for Software Carpentry and
@@ -21,7 +21,7 @@ carpentry: "swc"
 # dc-genomics: for Data Carpentry Genomics
 # dc-socsci: for Data Carpentry Social Sciences
 # dc-geospatial: for Data Carpentry Geospatial
-curriculum: "FIXME"
+curriculum: "dc-genomics"
 
 # If there is both an R and python official version of a curriculum, change the
 # value of the variable below ("flavor") to get the schedule updated accordingly
@@ -35,7 +35,7 @@ flavor: "r"
 # Most workshops don't use extra pages. More information about extra
 # pages are included in the README:
 # https://github.com/carpentries/workshop-template#creating-extra-pages
-title: "Workshop Title"
+title: "Data Carpentry: Genomics - GWU"
 
 
 #------------------------------------------------------------
@@ -43,12 +43,12 @@ title: "Workshop Title"
 #------------------------------------------------------------
 
 # What kind of thing is this ("workshop" or "lesson")?
-kind: "workshop"
+kind: "lesson"
 
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 # Please don't change it: <USERNAME>/<PROJECT> is correct.
-repository: <USERNAME>/<PROJECT>
+repository: schuyler-smith/2020-03-05-gwu
 
 # Email address, no mailto:
 # (Don't change this -- the contact address for your workshop will be set 
@@ -114,3 +114,4 @@ exclude:
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
+
