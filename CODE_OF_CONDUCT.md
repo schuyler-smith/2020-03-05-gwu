@@ -10,7 +10,7 @@ title: "Code of Conduct"
 <br>
 <br>
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>.This document also outlines how to report an incident if needed.
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html" target="_blank">Code of Conduct</a>.This document also outlines how to report an incident if needed.
 </p>
 
 <p class="text-center">
