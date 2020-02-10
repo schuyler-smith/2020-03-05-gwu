@@ -172,14 +172,14 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 
 
 {% comment %}
-SCHEDULE
+SCHEDULE  
 
 Show the workshop's schedule.  Edit the items and times in the table
 to match your plans.  You may also want to change 'Day 1' and 'Day
 2' to be actual dates or days of the week.
 {% endcomment %}
 
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Schedule <font size="3">(tentative)</font> </h2>
 {% include dc/schedule.html %}
 <hr/>
 
@@ -188,17 +188,6 @@ SYLLABUS
 
 Show what topics will be covered.
 
-1. If your workshop is R rather than Python, remove the comment
-around that section and put a comment around the Python section.
-2. Some workshops will delete SQL.
-3. Please make sure the list of topics is synchronized with what you
-intend to teach.
-4. You may need to move the div's with class="col-md-6" around inside
-the div's with class="row" to balance the multi-column layout.
-
-This is one of the places where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
 {% endcomment %}
 
 <h2 id="syllabus">Syllabus</h2>
