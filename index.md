@@ -10,35 +10,11 @@ humandate: "Mar 5-6, 2020"    # human-readable dates for the workshop (e.g., "Fe
 humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2020-03-05      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2020-03-06        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Jennifer Shelton", "Schuyler Smith"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-email: ["ssalazar@email.gwu.edu, mpotterbusch@email.gwu.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+instructor: ["Jennifer Shelton", "<br><p style='margin-left:30%;margin-top:-3%'>Schuyler Smith</p>"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+email: ["ssalazar@email.gwu.edu", "mpotterbusch@email.gwu.edu"]    # boxed, comma-separated list
+collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs 
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
-
-{% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
-
-{% comment %}
-HEADER
-
-Edit the values in the block above to be appropriate for your workshop.
-If the value is not 'true', 'false', 'null', or a number, please use
-double quotation marks around the value, unless specified otherwise.
-And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-
-{% comment %}
-Check DC curriculum
-{% endcomment %}
-
-{% if site.carpentry == "dc" or site.carpentry == "dc" %}
-{% unless site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-socsci" or site.curriculum == "dc-geospatial" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
 
 {% comment %}
 EVENTBRITE
@@ -60,43 +36,9 @@ displayed if the 'eventbrite' field in the header is not set.
 
 
 <h2 id="general">General Information</h2>
-
-{% comment %}
-INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
 {% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
 
-{% comment %}
-AUDIENCE
 
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
-
-{% comment %}
-LOCATION
-
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://itouchmap.com/latlong.html to find the lat/long of an
-address.
-{% endcomment %}
 {% if page.latitude and page.longitude %}
 <p id="where">
   <strong>Where:</strong>
@@ -121,22 +63,11 @@ This block displays the date and links to Google Calendar.
 </p>
 {% endif %}
 
-{% comment %}
-SPECIAL REQUIREMENTS
-
-Modify the block below if there are any special requirements.
-{% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 </p>
 
-{% comment %}
-ACCESSIBILITY
-
-Modify the block below if there are any barriers to accessibility or
-special instructions.
-{% endcomment %}
 <p id="accessibility">
   <strong>Accessibility:</strong> We are committed to making this workshop
   accessible to everybody.
@@ -196,7 +127,7 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 <p>
-  All required software for this workshop is freely available, and can be found in the <a href="{{ relative_root_path }}{% link setup.md %}">Setup tab of this webpage</a>.
+  All required software for this workshop is freely available, and can be found in the <a href="{{ relative_root_path }}{% link setup.md %}">Setup tab</a>.
 </p>
 <p>
   To participate in this workshop, you will need access to all of these software, as well as a web-browser. Instructors and assistants will not always be able to take the time to help with installations during the lessons, so please be sure to install and test them prior to attending.
