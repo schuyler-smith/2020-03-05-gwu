@@ -127,7 +127,7 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 <p>
-  All required software for this workshop is freely available, and can be found in the <a href="{{ relative_root_path }}{% link setup.md %}">Setup tab</a>.
+  All required software for this workshop is freely available, and can be found in the <a href = "workshop_setup">Setup tab</a>.
 </p>
 <p>
   To participate in this workshop, you will need access to all of these software, as well as a web-browser. Instructors and assistants will not always be able to take the time to help with installations during the lessons, so please be sure to install and test them prior to attending.

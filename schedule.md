@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Schedule of Lessons"
+permalink: schedule
 ---
 
 {% include dc/schedule.html %}
