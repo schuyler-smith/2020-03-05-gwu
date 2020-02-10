@@ -8,3 +8,7 @@ permalink: schedule
 
 <h2 id="syllabus">Syllabus</h2>
 {% include dc/syllabus.html %}
+
+<br>
+<br>
+<br>
