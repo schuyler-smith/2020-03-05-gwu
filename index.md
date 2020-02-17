@@ -4,8 +4,8 @@ venue: "George Washington University"        # brief name of host site without a
 address: "2130 H St NW, Washington, DC 20052"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latitude: "38.89"     # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "-77.04"    # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude: "38.89921"     # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "-77.04835"    # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Mar 5-6, 2020"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2020-03-05      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -42,11 +42,16 @@ displayed if the 'eventbrite' field in the header is not set.
 {% if page.latitude and page.longitude %}
 <p id="where">
   <strong>Where:</strong>
+  Room 301/302
+  <br>
+  Gelman Library, George Washington University
+  <br>
   {{page.address}}.
+  <br>
   Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
+  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16" target="_blank">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}" target="_blank">Google Maps</a>.
 </p>
 {% endif %}
 
