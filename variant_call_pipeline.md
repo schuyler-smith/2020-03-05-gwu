@@ -15,6 +15,7 @@ mkdir -p dc_workshop/raw_reads/../docs/../metadata/../qc/../trimmed_reads/../res
 
 cd dc_workshop
 
+tree -L 2
 ~~~
 {: .bash}
 
