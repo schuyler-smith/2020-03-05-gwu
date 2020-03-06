@@ -14,6 +14,7 @@ mkdir -p dc_workshop/raw_reads/../docs/../metadata/../qc/../trimmed_reads/../res
 cd dc_workshop
 
 ~~~
+{: .bash}
 
 ### Consilidate Files for Analysis
 ~~~
@@ -36,6 +37,8 @@ curl -L -o sub.tar.gz https://ndownloader.figshare.com/files/14418248
 tar xvf sub.tar.gz
 mv sub/ trimmed_fastq_small
 ~~~
+{: .bash}
+
 # Assess Sequence Quality
 
 ~~~
@@ -60,6 +63,8 @@ for infile in raw_reads/*_1.fastq.gz
 		ILLUMINACLIP:metadata/NexteraPE-PE.fa:2:40:15 
 done
 ~~~
+{: .bash}
+
 # Align Reads to Reference Genome
 
 ~~~
@@ -75,6 +80,7 @@ samtools view -S -b results/sam/SRR2584866.aligned.sam > results/bam/SRR2584866.
 
 samtools sort -o results/bam/SRR2584866.aligned.sorted.bam results/bam/SRR2584866.aligned.bam 
 ~~~
+{: .bash}
 
 ### View Alignment
 
@@ -82,12 +88,14 @@ samtools sort -o results/bam/SRR2584866.aligned.sorted.bam results/bam/SRR258486
 samtools index results/bam/SRR2584866.aligned.sorted.bam
 samtools tview results/bam/SRR2584866.aligned.sorted.bam data/ref_genome/ecoli_rel606.fasta
 ~~~
+{: .bash}
 
 ### View Statistics of Alignment
 
 ~~~
 samtools flagstat results/bam/SRR2584866.aligned.sorted.bam
 ~~~
+{: .bash}
 
 # Call Variants
 
@@ -100,18 +108,21 @@ bcftools call --ploidy 1 -m -v \
 	-o results/bcf/SRR2584866_variants.vcf \
 	results/bcf/SRR2584866_raw.bcf 
 ~~~
+{: .bash}
 
 ### Filter Variant Calls
 
 ~~~
 vcfutils.pl varFilter results/bcf/SRR2584866_variants.vcf > results/vcf/SRR2584866_final_variants.vcf
 ~~~
+{: .bash}
 
 ### View Variant Calls
 
 ~~~
 less -S results/vcf/SRR2584866_final_variants.vcf
 ~~~
+{: .bash}
 
 <br>
 <br>
