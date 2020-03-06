@@ -4,6 +4,8 @@ title: Variant Call Pipeline
 permalink: variant_call_pipeline
 ---
 
+<br>
+
 # Setup Environment
 
 ### Create Directory Tree
